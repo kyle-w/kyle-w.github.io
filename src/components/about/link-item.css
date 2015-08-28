@@ -1,0 +1,75 @@
+.linkItem {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.linkItem-info {
+  display: inline-block;
+  margin-left: 1.5em;
+  width: 80%;
+  vertical-align: top;
+}
+
+.linkItem-info h5 {
+  font-family: 'NeuzeitSLTStd-BookHeavy', 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+}
+
+.linkItem-info p {
+  margin: 0;
+  padding: 0;
+}
+
+.linkItem-info a {
+  color: #fff;
+  font-weight: 200;
+}
+
+.linkItem-icon {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.icon {
+  display: block;
+  width: 44px;
+  height: 50px;
+  background-position: 0;
+  background-repeat: no-repeat;
+}
+
+.contact {
+  background-image: url(../../assets/icon-contact.svg);
+  background-position: 0 9px;
+}
+
+.linkedin {
+  background-image: url(../../assets/icon-linkedin.svg);
+  background-position: 5px 2px;
+}
+
+.tumblr {
+  background-image: url(../../assets/icon-tumblr.svg);
+  background-position: 1px 3px;
+}
+
+.instagram {
+  background-image: url(../../assets/icon-instagram.svg);
+  background-position: 5px 8px;
+}
+
+@media (max-width: 414px) {
+  .linkItem-info {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 320px) {
+  .linkItem-info {
+    max-width: 190px;
+  }
+}

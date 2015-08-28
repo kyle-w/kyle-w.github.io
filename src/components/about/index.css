@@ -1,0 +1,15 @@
+.about {
+  margin: 0;
+}
+
+@media (max-width: 850px) {
+  .about {
+    margin-top: 172px;
+  }
+}
+
+@media (max-width: 414px) {
+  .about {
+    margin-top: 150px;
+  }
+}
