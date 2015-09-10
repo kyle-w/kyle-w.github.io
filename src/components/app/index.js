@@ -1,5 +1,6 @@
 import styles from './index.css';
 
+import {ajax} from 'jquery';
 import React, {Component} from 'react';
 import WebFont from 'webfontloader';
 
@@ -10,7 +11,7 @@ export default class App extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {loaded: false, index: this.getRandomArbitrary(0,5) };
+    this.state = {loaded: false, data: { links: [], colors: [] }, index: this.getRandomArbitrary(0,5) };
   }
 
   getRandomArbitrary(min, max) {
@@ -25,8 +26,14 @@ export default class App extends Component {
       },
       active: function done() {
         setTimeout(function t() {
-          self.setState({loaded: true});
-        }, 300);
+          ajax({
+            url: 'https://dl.dropboxusercontent.com/s/7131ieyj66q2700/data.json',
+            dataType: 'json',
+            success: function(data) {
+              self.setState({loaded: true, data: data});
+            }
+          });
+        }, 100);
       }
     });
   }
@@ -34,20 +41,17 @@ export default class App extends Component {
   render() {
     return (
       <div className="root">
-        <Hero pageLoaded={this.state.loaded} colors={this.props.colors} index={this.state.index} />
-        <About pageLoaded={this.state.loaded} colors={this.props.colors} index={this.state.index} />
+        <Hero
+          pageLoaded={this.state.loaded}
+          index={this.state.index}
+          data={this.state.data}
+        />
+        <About
+          pageLoaded={this.state.loaded}
+          index={this.state.index}
+          data={this.state.data}
+        />
       </div>
     );
   }
 }
-
-App.defaultProps = {
-  colors: [
-    {hero: '#181B30', summary: '#ddd', links: '#000'},
-    {hero: '#0E6AC7', summary: '#F6F5DA', links: '#062C80'},
-    {hero: '#203E5F', summary: '#FEE5B1', links: '#1A2634'},
-    {hero: '#5639A6', summary: '#FFE087', links: '#20236D'},
-    {hero: '#413D65', summary: '#BEF992', links: '#2B1F31'},
-    {hero: '#A03271', summary: '#EB92FB', links: '#4B4C7A'}
-  ]
-};

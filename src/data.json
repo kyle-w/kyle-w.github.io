@@ -1,0 +1,35 @@
+{
+  "title": "Kyle Wheeler",
+  "headline": "Design & Art Direction",
+  "summary": "Hello, I'm Kyle. For the past eight years I've been working as a designer in the fields of brand identity, wayfinding, digital and editorial design for studios such as Pentagram, Bureau for Visual Affairs and SAS in London. I'm currently working for The Times and Sunday Times as the lead designer of their new responsive website",
+  "links": [
+    {
+      "icon": "contact",
+      "label": "For more information or a portfolio please contact me at:",
+      "link": "hello@kylewheeler.co.uk"
+    },
+    {
+      "icon": "linkedin",
+      "label": "To find out more about who I’ve worked with",
+      "link": "linkedin.com/pub/kyle.wheeler"
+    },
+    {
+      "icon": "tumblr",
+      "label": "I collect things that interest me and post them here:",
+      "link": "touseforreference.tumblr.com"
+    },
+    {
+      "icon": "instagram",
+      "label": "A home for pictures I take myself:",
+      "link": "instagram.com/kyle.wheeler"
+    }
+  ],
+  "colors": [
+    {"hero": "#181B30", "summary": "#ddd", "links": "#000"},
+    {"hero": "#0E6AC7", "summary": "#F6F5DA", "links": "#062C80"},
+    {"hero": "#203E5F", "summary": "#FEE5B1", "links": "#1A2634"},
+    {"hero": "#5639A6", "summary": "#FFE087", "links": "#20236D"},
+    {"hero": "#413D65", "summary": "#BEF992", "links": "#2B1F31"},
+    {"hero": "#A03271", "summary": "#EB92FB", "links": "#4B4C7A"}
+  ]
+}

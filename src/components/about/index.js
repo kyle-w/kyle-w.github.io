@@ -7,10 +7,21 @@ import Links from './links';
 
 export default class About extends Component {
   render() {
+    const colors = this.props.data.colors;
     return (
       <div className="about">
-        <Summary pageLoaded={this.props.pageLoaded} colors={this.props.colors} index={this.props.index} />
-        <Links pageLoaded={this.props.pageLoaded} colors={this.props.colors} index={this.props.index} />
+        <Summary
+          pageLoaded={this.props.pageLoaded}
+          colors={colors}
+          index={this.props.index}
+          data={this.props.data}
+        />
+        <Links
+          pageLoaded={this.props.pageLoaded}
+          colors={colors}
+          index={this.props.index}
+          data={this.props.data}
+        />
       </div>
     );
   }

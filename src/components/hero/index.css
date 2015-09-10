@@ -4,13 +4,13 @@
   width: 100%;
   color: #fff;
   background: #181B30;
-  transition: .3s ease;
+  transition: .6s ease;
   z-index: 3;
 }
 
 .hero.animate {
-  -webkit-animation: loading 600ms 300ms ease-in-out forwards;
-  animation: loading 600ms 300ms ease-in-out forwards;
+  -webkit-animation: loading 800ms 800ms ease-in-out forwards;
+  animation: loading 800ms 800ms ease-in-out forwards;
 }
 
 @-webkit-keyframes loading {
@@ -60,6 +60,12 @@
 
 .hero-content {
   padding: 50px;
+  transition: .3s ease;
+  opacity: 0;
+}
+
+.hero-content.is-visible {
+  opacity: 1;
 }
 
 .hero-title,
