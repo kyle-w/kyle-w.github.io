@@ -62,7 +62,7 @@
   background-position: 5px 8px;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 600px) {
   .linkItem-info {
     max-width: 200px;
   }
