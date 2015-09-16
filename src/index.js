@@ -1,4 +1,4 @@
-import './assets/CNAME';
+// import './assets/CNAME';
 
 import React from 'react';
 import App from './components/app';

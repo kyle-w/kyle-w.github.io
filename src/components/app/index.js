@@ -27,7 +27,7 @@ export default class App extends Component {
       active: function done() {
         setTimeout(function t() {
           ajax({
-            url: 'https://dl.dropboxusercontent.com/s/7131ieyj66q2700/data.json',
+            url: 'https://dl.dropboxusercontent.com/s/5aafot8p7zvfehq/data.json',
             dataType: 'json',
             success: function(data) {
               self.setState({loaded: true, data: data});
