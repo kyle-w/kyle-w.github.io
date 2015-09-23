@@ -31,6 +31,7 @@ export default class App extends Component {
             dataType: 'json',
             success: function(data) {
               self.setState({loaded: true, data: data});
+              document.querySelector('body').style.backgroundColor = this.state.data.colors.summary;
             }
           });
         }, 100);

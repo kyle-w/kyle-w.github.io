@@ -11,7 +11,7 @@
 }
 
 .links-content {
-  padding: 50px;
+  padding: 34px;
   padding-top: 60px;
   opacity: 0;
 }
@@ -36,6 +36,7 @@
   100% { opacity: 1; }
 }
 
+
 @media (max-width: 850px) {
   .links {
     width: 100%;
@@ -45,7 +46,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .links {
     position: relative;
     display: block;

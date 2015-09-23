@@ -13,7 +13,7 @@
   line-height: 1.46em;
   font-weight: 200;
   margin: 0;
-  padding: 50px;
+  padding: 34px;
   opacity: 0;
 }
 
@@ -68,14 +68,14 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .summary {
     display: block;
     position: relative;
-    height: auto;
+    height: 58%;
   }
   .summary p {
-    max-width: inherit;
+    max-width: 70%;
     padding: 30px;
     font-size: 22px;
     line-height: 31px;

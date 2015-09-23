@@ -3,7 +3,7 @@
   height: 100%;
   width: 100%;
   color: #fff;
-  background: #181B30;
+  background: #fff;
   transition: .6s ease;
   z-index: 3;
 }
@@ -59,7 +59,7 @@
 }
 
 .hero-content {
-  padding: 50px;
+  padding: 34px;
   transition: .3s ease;
   opacity: 0;
 }
@@ -91,7 +91,7 @@
 @media (max-width: 850px) {
   .hero {
     top: 0;
-    position: absolute;
+    position: relative;
     display: block;
     width: 100%;
     height: 100%;
@@ -118,10 +118,10 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .hero {
     top: 0;
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100%;
   }
