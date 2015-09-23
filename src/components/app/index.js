@@ -18,6 +18,18 @@ export default class App extends Component {
     return Math.floor(Math.random() * (max - min)) + min;
   }
 
+  changeColors(start) {
+    let self = this;
+    let delay = 4000;
+    if (start) {
+      delay = 0;
+    }
+    setTimeout(function t(){
+      self.setState({index: self.getRandomArbitrary(0,5)});
+      self.changeColors();
+    }, delay);
+  }
+
   componentDidMount() {
     let self = this;
     WebFont.load({
@@ -31,7 +43,10 @@ export default class App extends Component {
             dataType: 'json',
             success: function(data) {
               self.setState({loaded: true, data: data});
-              document.querySelector('body').style.backgroundColor = this.state.data.colors.summary;
+              // document.querySelector('body').style.backgroundColor = this.state.data.colors.summary;
+              setTimeout(function t(){
+                self.changeColors(true);
+              }, 4000);
             }
           });
         }, 100);
