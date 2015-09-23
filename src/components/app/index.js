@@ -20,7 +20,7 @@ export default class App extends Component {
 
   changeColors(start) {
     let self = this;
-    let delay = 4000;
+    let delay = 5199;
     if (start) {
       delay = 0;
     }
@@ -46,7 +46,7 @@ export default class App extends Component {
               // document.querySelector('body').style.backgroundColor = this.state.data.colors.summary;
               setTimeout(function t(){
                 self.changeColors(true);
-              }, 4000);
+              }, 5199);
             }
           });
         }, 100);
