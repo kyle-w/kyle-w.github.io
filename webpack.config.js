@@ -42,7 +42,8 @@ module.exports = {
     // {
     //   test: /CNAME/,
     //   loader: 'file?name=CNAME'
-    // }]
+    // }
+    ]
   },
 
   resolve: {

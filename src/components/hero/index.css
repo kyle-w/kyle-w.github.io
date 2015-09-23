@@ -121,6 +121,7 @@
 @media (max-width: 768px) {
   .hero {
     top: 0;
+    display: block;
     position: relative;
     width: 100%;
     height: 100%;

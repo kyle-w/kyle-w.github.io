@@ -81,3 +81,9 @@
     line-height: 31px;
   }
 }
+
+@media (max-width: 600px) {
+  .summary {
+    height: auto;
+  }
+}
