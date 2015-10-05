@@ -19,6 +19,7 @@ export default class Links extends Component {
         <LinkItem
           label={item.label}
           link={item.link}
+          linkUrl={item.linkUrl}
           icon={item.icon}
           key={i}
         />

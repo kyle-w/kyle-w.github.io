@@ -2,3 +2,9 @@
   margin: 0;
   height: 100%;
 }
+
+@media (max-width: 768px) {
+  .about {
+    height: auto;
+  }
+}

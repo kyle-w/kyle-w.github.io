@@ -17,19 +17,6 @@ export default class App extends Component {
   getRandomArbitrary(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
   }
-
-  changeColors(start) {
-    let self = this;
-    let delay = 5199;
-    if (start) {
-      delay = 0;
-    }
-    setTimeout(function t(){
-      self.setState({index: self.getRandomArbitrary(0,5)});
-      self.changeColors();
-    }, delay);
-  }
-
   componentDidMount() {
     let self = this;
     WebFont.load({
@@ -39,14 +26,11 @@ export default class App extends Component {
       active: function done() {
         setTimeout(function t() {
           ajax({
-            url: 'https://dl.dropboxusercontent.com/s/5aafot8p7zvfehq/data.json',
+            //url: 'https://dl.dropboxusercontent.com/s/5aafot8p7zvfehq/data.json',
+            url: 'http://kyle-w.github.io/website-content/data.json',
             dataType: 'json',
             success: function(data) {
               self.setState({loaded: true, data: data});
-              // document.querySelector('body').style.backgroundColor = this.state.data.colors.summary;
-              setTimeout(function t(){
-                self.changeColors(true);
-              }, 5199);
             }
           });
         }, 100);

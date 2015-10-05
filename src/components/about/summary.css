@@ -51,17 +51,6 @@
   }
 }
 
-@media (max-width: 850px) {
-  .summary {
-    width: 100%;
-    display: block;
-    position: relative;
-  }
-  .summary p {
-    max-width: 70%;
-  }
-}
-
 @media (max-width: 760px) {
   .summary p {
     max-width: 100%;
@@ -70,20 +59,26 @@
 
 @media (max-width: 768px) {
   .summary {
+    width: 100%;
     display: block;
     position: relative;
-    height: 58%;
+    height: 50%;
   }
   .summary p {
-    max-width: 70%;
+    max-width: 100%;
     padding: 30px;
-    font-size: 22px;
-    line-height: 31px;
+    font-size: 30px;
+    line-height: 45px;
   }
 }
 
 @media (max-width: 600px) {
   .summary {
     height: auto;
+  }
+
+  .summary p {
+    font-size: 19px;
+    line-height: 25px;
   }
 }

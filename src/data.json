@@ -6,22 +6,26 @@
     {
       "icon": "contact",
       "label": "For more information or a portfolio please contact me at:",
-      "link": "hello@kylewheeler.co.uk"
+      "link": "@mail",
+      "linkUrl": "mailto:hello@kylewheeler.co.uk"
     },
     {
       "icon": "linkedin",
       "label": "To find out more about who I’ve worked with",
-      "link": "linkedin.com/pub/kyle.wheeler"
+      "link": "linkedin.com/pub/kyle.wheeler",
+      "linkUrl": "https://www.linkedin.com/pub/kyle.wheeler"
     },
     {
       "icon": "tumblr",
       "label": "I collect things that interest me and post them here:",
-      "link": "touseforreference.tumblr.com"
+      "link": "touseforreference.tumblr.com",
+      "linkUrl": "http://touseforreference.tumblr.com/"
     },
     {
       "icon": "instagram",
       "label": "A home for pictures I take myself:",
-      "link": "instagram.com/kyle.wheeler"
+      "link": "instagram.com/kyle.wheeler",
+      "linkUrl": "https://instagram.com/kyle.wheeler/"
     }
   ],
   "colors": [

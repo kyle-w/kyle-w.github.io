@@ -37,15 +37,6 @@
 }
 
 
-@media (max-width: 850px) {
-  .links {
-    width: 100%;
-    display: block;
-    position: relative;
-    min-width: 600px;
-  }
-}
-
 @media (max-width: 768px) {
   .links {
     position: relative;
@@ -59,5 +50,26 @@
   }
   .links-content {
     padding: 30px;
+    padding-bottom: 100px;
+    height: auto;
   }
 }
+
+@media (max-device-width: 768px) and (orientation: portrait)  {
+  .links {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .links {
+    position: relative;
+    bottom: inherit;
+  }
+  .links-content {
+    padding-bottom: 30px;
+    font-size: 14px;
+  }
+}
+
