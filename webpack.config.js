@@ -38,12 +38,11 @@ module.exports = {
     {
       test: /\.(otf|eot|ttf|woff|woff2)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
       loader: 'file?name=[name].[ext]'
-    }
-    // {
-    //   test: /CNAME/,
-    //   loader: 'file?name=CNAME'
-    // }
-    ]
+    },
+    {
+      test: /CNAME/,
+      loader: 'file?name=CNAME'
+    }]
   },
 
   resolve: {
